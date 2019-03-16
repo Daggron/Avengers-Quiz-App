@@ -1,0 +1,341 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Avenger's Quiz"
+                android:textColor="#9D00FF"
+                android:textSize="40dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/avengers" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Who plays the role of Ironman in MCU?"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+
+            <RadioGroup
+                android:id="@+id/q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/q1a1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="Robert Downey Jr."
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/q1a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Tom Cruize"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/q1a3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Heath Ledger"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/q1a4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Chris Evans"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="What is the name of Thor's Weapon?"
+                android:textColor="#000000"
+                android:textSize="16sp"
+
+                />
+
+            <CheckBox
+                android:id="@+id/Mjolnir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="Mjolnir"
+                android:textSize="16sp">
+
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/Claw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="Katana"
+                android:textSize="16sp">
+
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/Bifrost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="Valkrye"
+
+                android:textSize="16sp">
+
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/StormBreaker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="Storm\nBreaker"
+                android:textSize="16sp">
+
+            </CheckBox>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Dr. Strange is the keeper of which Stone?"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:hint="Enter Name Here"
+                android:id="@+id/Dr_Strange_Answer"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Who is the leader of avengers?"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"/>
+
+
+             <RadioGroup
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:layout_marginTop="20dp"
+                 android:layout_gravity="center">
+
+
+                 <RadioButton
+                     android:id="@+id/Captain"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="5dp"
+                     android:text="Captain America"
+                     android:textColor="#000000"
+                     android:textSize="16sp" />
+                 <RadioButton
+                     android:id="@+id/Ironman"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="5dp"
+                     android:text="Iron Man"
+                     android:textColor="#000000"
+                     android:textSize="16sp" />
+
+                 <RadioButton
+                     android:id="@+id/Bruce"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="5dp"
+                     android:text="Bruce Banner"
+                     android:textColor="#000000"
+                     android:textSize="16sp" />
+                 <RadioButton
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="5dp"
+                     android:text="Thor"
+                     android:textColor="#000000"
+                     android:textSize="16sp"
+                     android:id="@+id/Thor"
+                     />
+
+
+
+             </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:text="Who is the director of shield?"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Nick Fury"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:id="@+id/Fury"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Colson"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:id="@+id/Colson"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Maria Hill"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:id="@+id/Maria"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Pepper Pods"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:id="@+id/Pepper"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Tony Stark"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:id="@+id/Tony"
+                    />
+
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="How Many Infinty Stones are there in mcu?"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:hint="Enter the number here"
+                android:id="@+id/stonesNumber"/>
+
+
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="submitQuiz"
+                android:text="Submit"
+                android:textColor="#6F52C5"
+                android:textSize="16sp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
