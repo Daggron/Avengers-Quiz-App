@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
     int count=0;
 
     public void submitQuiz(View view){
+        //made count equal to zero so on resubmitting the answer the score start from zero
+        count=0;
         //if statements to check the correct answers
         //and increment the count variable on right answer
         if(checkfirst()){

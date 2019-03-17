@@ -22,7 +22,7 @@
                 android:layout_gravity="center"
                 android:text="Avenger's Quiz"
                 android:textColor="#9D00FF"
-                android:textSize="40dp" />
+                android:textSize="40sp" />
 
             <ImageView
                 android:layout_width="match_parent"
