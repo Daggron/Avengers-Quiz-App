@@ -58,12 +58,8 @@ public class MainActivity extends AppCompatActivity {
     boolean checkfirst(){
        RadioButton ans1=(RadioButton) findViewById(R.id.q1a1);
        boolean ans = ans1.isChecked();
-       if(ans){
-           return true;
-       }
-       else {
-           return false;
-       }
+
+       return ans;
 
     }
 
@@ -76,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         boolean ans2=c2.isChecked();
         boolean ans3=c3.isChecked();
         boolean ans4=c4.isChecked();
-        if(ans1&&ans2&&ans3==false&&ans4==false){
+        if(ans1&&ans2&&!ans3&&!ans4){
             return true;
         }
         else {
